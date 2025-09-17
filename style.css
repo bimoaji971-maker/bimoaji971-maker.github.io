@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#first-screen img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #444;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#yes-btn {
+    background-color: #ff6b6b;
+    color: white;
+    position: relative;
+    transition: all 0.2s ease-out;
+}
+
+#no-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#second-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#second-screen img {
+    width: 250px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.heart-animation {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: growAndFade 1.5s ease-out forwards;
+}
+
+@keyframes growAndFade {
+    0% { transform: scale(0); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(2); opacity: 0; }
+}
